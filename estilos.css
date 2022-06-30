@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f3ede5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*--encabezado--*/
+.header{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.barra .menu{
+    display: flex;
+
+}
+.barra ul li{
+    list-style: none;
+    margin-right: 20PX;
+}
+.barra ul li a{
+    text-decoration: none;
+}
+h4{
+    color: #333;
+}
+.contenido{
+    display: flex;
+
+}
+.menuProducto{
+    color: #b7b4af;
+}
+.submenu-links{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+}
+.submenu-links p{
+    color: #b7b4af;
+}
+.submenu{
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 45%;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+/*.abrir{
+    display: block;
+}*/
+/*.barra .menu .menuProducto:hover .submenu{
+    display: block;
+}*/
+.encabezado{
+    text-decoration: none;
+    color: #b7b4af;
+}
+
+.boton{
+    background: #133416;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.boton-menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+    display: none;
+}
+.imagen-menu{
+    display: block;
+    width: 50px;
+}
+
+
+/*----centro de la pagina---*/
+.principal{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+}
+.seccion{
+    width: 60%;
+}
+h1{
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+span{
+    color: #f7b300;
+}
+.fuente{
+    color: #b7b4af;
+    margin-bottom: 20px;
+}
+.reviews{
+    display: flex;
+    color: #b7b4af;
+    margin-top: 20px;
+}
+.lado{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.imagen{
+    height: 350px;
+    width: 300px;
+}
+
+/*--- parte baja de la pagina---*/
+.footer{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+.letras{
+    color: #b7b4af;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.marcas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.marca{
+    height: 2em;
+    width: 7em;
+    margin: 0 15px;
+}
+
+/*--- mobile---*/
+@media screen and (max-width:850px) {
+    .imagen{
+        display: none;
+    }
+    .barra .menu{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        display: none;
+    }
+    .marca{
+        height: 2.5em;
+        width: 5em;
+    }
+    .letras{
+        font-size: 0.8em;
+    }
+    .reviews{
+        font-size: 0.8em;
+    }
+    .registro{
+        display: none;
+    }
+    h1{
+        font-size: 1.8em;
+    }
+    .lado{
+        display: none;
+    }
+    .seccion{
+        width: 100%;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .boton-menu{
+        display: block;
+    }
+    .submenu{
+        position: absolute;
+        width:300px;
+        right: 10px;
+        z-index: 100;
+        cursor: pointer;
+    }
+    
+}
